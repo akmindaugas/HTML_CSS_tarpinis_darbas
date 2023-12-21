@@ -36,6 +36,23 @@ main {
     padding-right: 140px;
     text-align: center;
 }
+ h3.btn_txt{
+    color: var(--color-text-white);
+   }
+   h4{
+    font-size: var(--font-card-title);
+    margin: 0;
+   }
+    h3{
+    font-size: var(--font-card-title);
+    color: var(--color-text-yellow)
+    }
+    h2{
+    font-size: var(--font-h2);
+    }
+    p{
+        font-size: var(--font-card-p);
+    }
 .nav{
     display: inline-flex;
     justify-content: space-between;
@@ -103,23 +120,7 @@ main {
     max-width: 50%;
     text-align: left;
    }
-   h3.btn_txt{
-    color: var(--color-text-white);
-   }
-   h4{
-    font-size: var(--font-card-title);
-    margin: 0;
-   }
-    h3{
-    font-size: var(--font-card-title);
-    color: var(--color-text-yellow)
-    }
-    h2{
-    font-size: var(--font-h2);
-    }
-    p{
-        font-size: var(--font-card-p);
-    }
+  
     .title_section{
         background:linear-gradient(164deg, rgba(239, 128, 49, 0.00) -335.51%, rgba(239, 128, 49, 0.15) -20.24%, rgba(239, 128, 49, 0.00) 119.45%);
     }
@@ -192,4 +193,55 @@ main {
     text-align: left;
     padding: 50px 50px 50px 50px;
 }
-  
+.fifth_section{
+    margin-bottom: 100px;
+}
+  .fifth_section_headline{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .button_arrow{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: var(--color-main-bg);
+    border: none;
+  }
+
+  .arrow{
+   width: 32px;
+    height: 32px;
+  }
+  .circle_arrow{
+    width: 44px;
+    height: 44px;
+    border-radius: 44px; 
+    background-color: var(--color-main-green); 
+    margin-left: 25px;
+  }
+  .caroussel_cards{
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+   
+  }
+.c_card_img{
+    max-width: 154px;
+    height: 268px;
+    object-fit:cover;
+}
+.card_wrapper{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    border-radius: 8px;
+    background: linear-gradient(358deg, rgba(100, 123, 100, 0.77) -118.86%, rgba(100, 123, 100, 0.00) 25.62%, rgba(100, 123, 100, 0.00) 98.53%), #FFF;
+}
+.card_txt{
+    grid-column: 1 / 3;
+}
+.first_caroussel_card,.second_caroussel_card,.third_caroussel_card{
+    padding: 0px 60px 32px 40px;
+}
