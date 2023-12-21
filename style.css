@@ -108,6 +108,7 @@ main {
    }
    h4{
     font-size: var(--font-card-title);
+    margin: 0;
    }
     h3{
     font-size: var(--font-card-title);
@@ -148,5 +149,47 @@ main {
     .car_offer{
         background-color: var(--color-white-bg);
     }
-
+    .third_section{
+        display: flex;
+        flex-direction: column;
+    }
+    .mot_cards{
+        display: flex;
+        flex-direction: row;
+        
+    }
+    .mot_icon{
+        width: 64px;
+        height: 64px;
+    }
+.mot{
+    width: 360px;
+    height: 338px;
+    text-align: left;
+    border-radius: 8px;
+    padding: 78px 50px 72px 50px;
+    margin: 10px;
+    box-shadow: 1px 1px 1px 1px rgba(100, 123, 100, 0.00);
+    }
+.mot:nth-child(even){
+    background-color: var(--color-main-green);
+    color: var(--color-text-white);
+    border-radius: 8px;
+}
+.mot:nth-last-child(odd){
+    background: linear-gradient(358deg, rgba(100, 123, 100, 0.77) -118.86%, rgba(100, 123, 100, 0.00) 25.62%, rgba(100, 123, 100, 0.00) 98.53%), #FFF;
+}
+.fourth_section{
+    display: flex;
+    flex-direction: row;
+}
+#peoples{
+    max-width: 563px;
+    max-height: 545px;
+    object-fit: cover;
+}
+.fourth_section_content{
+    text-align: left;
+    padding: 50px 50px 50px 50px;
+}
   
