@@ -1,0 +1,65 @@
+/* @use "variables"; */
+:root {
+--font-h1: 48px;
+--font-h2: 41px;
+--font-card-title: 24px;
+--font-p: 20px;
+--font-button: 16px;
+--color-main-green: #647b64;
+--color-text-yellow: #f3b562;
+--color-footer-bg: #f0dcc5;
+--color-main-bg: #fff;
+--color-text-white: #fefefe;
+--color-text-black: #333;
+}
+
+*, *::before, *::after {
+    box-sizing: border-box;
+  }
+
+body{
+     background-color: lightslategray; 
+}
+
+main {
+    max-width: 1440px; 
+    border: 2px solid green;
+    background-color: var(--color-main-bg);
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 50px;
+    text-align: center;
+}
+.nav{
+    display: inline-flex;
+    justify-content: space-between;
+    align-items: baseline;
+    width: 100%;
+    margin-top: 20px;
+   }
+   .logo{
+    display: flex;
+    margin-left: 140px;
+    gap: 20px;
+    
+   }
+   .menu{
+    display: flex;
+    width: 50%;
+    font-size: var(--font-button);
+    justify-content: space-between;
+    align-items: baseline;  
+   }
+   .nav .menu a{
+  text-decoration: none;
+  color: var(--color-text-black);
+   }
+   .register{
+    background-color: var(--color-main-green);
+    color: var(--color-text-white);
+    border: none;
+    padding: 15px;
+    border-radius: 3px;
+    font-size: var(--font-button);
+    margin-right: 140px;
+   }
