@@ -63,3 +63,45 @@ main {
     font-size: var(--font-button);
     margin-right: 140px;
    }
+   .first_section{
+    display: flex;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    /* justify-items: center ; */
+   }
+   .first_section_content{
+    max-width: 50%;
+    margin-left: 180px;
+    text-align: left;
+  
+   }
+   .tennis_girl{
+    max-width: 319;
+    height: auto;
+   }
+   .get_started{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 350px;
+    height: 73px;
+    background-color: #647b64;
+    color: var(--color-text-white);
+    border-radius: 2px;
+    border: none;
+    font-size: var(--font-button);
+   }
+   .second_section{
+    display: flex;
+   }
+   .second_section_content{
+    margin-left: 140px;
+   }
+h3{
+    font-size: var(--font-card-title);
+}
+h2
+ 
+
+  
