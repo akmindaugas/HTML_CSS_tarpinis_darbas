@@ -245,7 +245,7 @@ main {
 .first_caroussel_card,.second_caroussel_card,.third_caroussel_card{
     padding: 0px 60px 32px 40px;
 }
-.footer_wrapper{
+.footer_lists{
     width: 100%;
     height: auto;
     background-color: var(--color-footer-bg);
@@ -263,9 +263,13 @@ main {
 }
 
 .footer_lists{
+    max-width: 100%;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: auto;
+    padding-top: 100px;
+    padding-left: 140px;
+    padding-left: 140px;
 }
 ul{
     list-style-type: none;
@@ -274,4 +278,16 @@ ul{
 }
 li{
     margin-bottom: 20px;
+}
+span{
+    font-size: var(--font-p);
+    color: var(--color-main-green);
+}
+.footer_logo{
+    display: flex;
+    flex-direction: row;
+    gap:10px;
+    width: 100px;
+    height: auto;
+
 }
