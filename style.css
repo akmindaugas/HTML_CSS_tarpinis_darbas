@@ -91,6 +91,8 @@ main {
     width: 100%;
     justify-content:space-around;
     background-image: url(./img/Ellipse\ 119.svg);
+    background-repeat: no-repeat;
+    background-position: 0% 90%;
   
    }
    .first_section_content{
@@ -99,6 +101,7 @@ main {
     justify-content: center;
     max-width: 40%;
     margin-left: 40px;
+    padding-right: 80px;
     text-align: left;
     background-image: url(./img/Ellipse\ 116.svg);
     background-repeat: no-repeat;
@@ -114,6 +117,7 @@ main {
     background-image: url(./img/Ellipse\ 118.svg);
     background-repeat: no-repeat;
     background-position:20% 25%;
+    margin-right: 140px;
    }
    .get_started{
     display: flex;
@@ -135,29 +139,40 @@ main {
     display: flex;
    }
    .second_section_content{
-    max-width: 50%;
+    max-width: 40%;
     text-align: left;
+    padding-left: 150px;
+    position: relative;
    }
   .title_section h3{
+    padding-top: 40px;
     color: var(--color-text-yellow);
   }
   .title_section h2{
     color: var(--color-main-green);
     font-weight: 400;
   }
-    .title_section{
+    .rectangle{
+        position: absolute;
+        left: 0;
+        width: 550px;
+        height: 153px;
         background:linear-gradient(164deg, rgba(239, 128, 49, 0.00) -335.51%, rgba(239, 128, 49, 0.15) -20.24%, rgba(239, 128, 49, 0.00) 119.45%);
     }
     .offers{
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
+    margin-right: 140px;
+    /* column-gap: 20px; */
+    /* row-gap: 20px; */
     }
     .offers.card{
-    max-width: 237px;
-    max-height: 288px;
+    max-width: 288px;
+    max-height: 237px;
     border-radius: 8px;
     position: relative;
+    padding: 20px auto;
     }
     .icon{
     width: 28px;
@@ -177,13 +192,25 @@ main {
     .third_section{
         display: flex;
         flex-direction: column;
+        position: relative;
     }
     
     .mot_cards{
         display: flex;
         flex-direction: row;
-        
+        justify-content: center;
+        z-index: 1;
     }
+    .rectangle_second{
+        position: absolute;
+       width: 363px;
+       height: 182px;
+        border-radius: 8px;
+        background: linear-gradient(198deg, rgba(239, 128, 49, 0.00) -227.37%, rgba(239, 128, 49, 0.15) 1.58%, rgba(239, 128, 49, 0.00) 103.02%);
+        bottom: 0;
+        right: 0;
+      
+}
     .mot_icon{
         width: 64px;
         height: 64px;
@@ -201,11 +228,15 @@ main {
     background-color: var(--color-main-green);
     color: var(--color-text-white);
     border-radius: 8px;
+    z-index: 1;
 }
 .mot:nth-last-child(odd){
     background: linear-gradient(358deg, rgba(100, 123, 100, 0.77) -118.86%, rgba(100, 123, 100, 0.00) 25.62%, rgba(100, 123, 100, 0.00) 98.53%), #FFF;
+    
 }
 .fourth_section{
+    margin-top: 150px;
+    margin-left: 140px;
     display: flex;
     flex-direction: row;
 }
