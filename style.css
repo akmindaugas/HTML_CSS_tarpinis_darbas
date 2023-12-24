@@ -193,6 +193,7 @@ main {
         display: flex;
         flex-direction: column;
         position: relative;
+        margin-bottom: 100px;
     }
     
     .mot_cards{
@@ -207,7 +208,7 @@ main {
        height: 182px;
         border-radius: 8px;
         background: linear-gradient(198deg, rgba(239, 128, 49, 0.00) -227.37%, rgba(239, 128, 49, 0.15) 1.58%, rgba(239, 128, 49, 0.00) 103.02%);
-        bottom: 0;
+        bottom: -30px;
         right: 0;
       
 }
@@ -217,7 +218,7 @@ main {
        height: 182px;
         border-radius: 8px;
         background: url(./img/Dots\ 8px.1.png);
-   bottom:0;
+   bottom:-30px;
    left: 100px;
       
 }
@@ -249,6 +250,8 @@ main {
     margin-left: 140px;
     display: flex;
     flex-direction: row;
+    align-items: center;
+    justify-content: center;
 }
 #peoples{
     max-width: 563px;
@@ -259,14 +262,29 @@ main {
     text-align: left;
     padding: 50px 50px 50px 50px;
 }
+.fourth_section_img{
+    position: relative;
+}
+.fourth_section_img_back{
+    position: absolute;
+    max-width: 563px;
+    max-height: 545px;
+    background: linear-gradient(198deg, rgba(239, 128, 49, 0.00) -227.37%, rgba(239, 128, 49, 0.15) 1.58%, rgba(239, 128, 49, 0.00) 103.02%);
+    top: 20px;
+    right: 20px;
+
+}
 .fifth_section{
     margin-bottom: 100px;
+    margin-left: 140px;
 }
+
+
   .fifth_section_headline{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    align-items: center;
+    align-items: l;
   }
   .button_arrow{
     display: flex;
