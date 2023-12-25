@@ -34,9 +34,10 @@ main {
     background-color: var(--color-main-bg);
     margin-top: 100px;
     margin-left: auto;
-    margin-right: auto;
+    margin-right: 140px;
     padding-top: 50px;
      text-align: center;
+     border: 2px solid red;
 }
    h4{
     font-size: var(--font-card-title);
@@ -55,7 +56,7 @@ main {
         font-size: var(--font-card-p);
     }
 .nav{
-    display: inline-flex;
+    display: flex;
     justify-content: space-between;
     align-items: baseline;
     width: 100%;
@@ -353,9 +354,9 @@ main {
     position:absolute;
     left:180px;
 }
-.first_caroussel_card,.second_caroussel_card,.third_caroussel_card{
+/* .first_caroussel_card,.second_caroussel_card,.third_caroussel_card{
     padding: 
-}
+} */
 .footer_lists{
     width: 100%;
     height: auto;
@@ -410,5 +411,18 @@ span{
     margin-top: 0;
 }
 .footer_send_message{
-    max-width:283px;
-}
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 283px;
+        height: 56.6px;
+        background-color: #647b64;
+        color: var(--color-text-white);
+        border-radius: 2px;
+        border: none;
+        font-size: var(--font-button);
+        font-weight: 100;
+        padding: 20px;
+        margin-top: 30px;
+       }
+ 
