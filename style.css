@@ -277,7 +277,9 @@ main {
 }
 .fifth_section{
     width: 100%;
-    margin-bottom: 100px;}
+    margin-bottom: 100px;
+    margin-top: 150px;
+}
   .fifth_section_headline{
     display: flex;
     flex-direction: row;
@@ -341,13 +343,13 @@ main {
     position:absolute;
     left:180px;
 }
-/* .first_caroussel_card,.second_caroussel_card,.third_caroussel_card{
-    padding: 
-} */
+
 .footer_lists{
     width: 100%;
     height: auto;
     background-color: var(--color-footer-bg);
+    margin-bottom: 150px;
+    padding-bottom: 50px;
 }
 .footer_headline{
     width: 100%;
@@ -368,7 +370,7 @@ main {
     grid-template-rows: auto;
     padding-top: 100px;
     padding-left: 140px;
-    padding-left: 140px;
+
 }
 ul{
     list-style-type: none;
@@ -386,7 +388,7 @@ span{
     display: flex;
     flex-direction: row;
     gap:10px;
-    width: 100px;
+    max-width: 100px;
     height: auto;
 }
 #mail_box{
