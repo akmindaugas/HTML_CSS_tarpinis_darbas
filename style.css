@@ -1,6 +1,6 @@
-/* @use "variables"; */
 
   @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap');
+/* @use "variables"; */
 
 :root {
 --font-h1: 48px;
@@ -9,7 +9,7 @@
 --font-p: 20px;
 --font-button: 16px;
 --font-card-p: 13px;
---font-card-title: 31px;
+/* --font-card-title: 31px; */
 --color-main-green: #647b64;
 --color-text-yellow: #f3b562;
 --color-footer-bg: #f0dcc5;
@@ -33,11 +33,13 @@ main {
     max-width: 1440px; 
     background-color: var(--color-main-bg);
     margin-top: 100px;
+    margin-bottom: 100px;
     margin-left: auto;
-    margin-right: 140px;
+    margin-right: auto;
+    padding-right: 140px;
+    padding-left: 140px;
     padding-top: 50px;
      text-align: center;
-     border: 2px solid red;
 }
    h4{
     font-size: var(--font-card-title);
@@ -56,13 +58,12 @@ main {
         font-size: var(--font-card-p);
     }
 .nav{
-    display: flex;
+    display: inline-flex;
     justify-content: space-between;
     align-items: baseline;
     width: 100%;
     margin-top: 20px;
-    margin-left: 140px;
-  
+    /* margin-left: 140px; */
    }
    .logo{
     max-width: 50%;
@@ -74,7 +75,6 @@ main {
    .menu{
     display: flex;
     max-width: 50%;
-    margin-right: 140px;
     font-size: var(--font-button);
     justify-content: space-between;
     align-items: baseline;  
@@ -98,14 +98,12 @@ main {
     background-image: url(./img/Ellipse\ 119.svg);
     background-repeat: no-repeat;
     background-position: 0% 90%;
-  
    }
    .first_section_content{
     display: flex;
     flex-direction: column;
     justify-content: center;
     max-width: 40%;
-    margin-left: 40px;
     padding-right: 80px;
     text-align: left;
     background-image: url(./img/Ellipse\ 116.svg);
@@ -122,7 +120,7 @@ main {
     background-image: url(./img/Ellipse\ 118.svg);
     background-repeat: no-repeat;
     background-position:20% 25%;
-    margin-right: 140px;
+ 
    }
    .get_started{
     display: flex;
@@ -150,7 +148,7 @@ main {
     position: relative;
    }
   .title_section h3{
-    padding-top: 40px;
+    padding-top: 20px;
     color: var(--color-text-yellow);
   }
   .title_section h2{
@@ -168,7 +166,6 @@ main {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
-    margin-right: 140px;
     /* column-gap: 20px; */
     /* row-gap: 20px; */
     }
@@ -223,8 +220,8 @@ main {
        height: 182px;
         border-radius: 8px;
         background: url(./img/Dots\ 8px.1.png);
-   bottom:-30px;
-   left: 100px;
+   bottom:-20px;
+   left: 0px;
       
 }
     .mot_icon{
@@ -252,51 +249,41 @@ main {
 }
 .fourth_section{
     margin-top: 150px;
-    margin-left: 140px;
     display: flex;
     flex-direction: row;
-    align-items: center;
-    justify-content: center;
+    justify-content:space-between;
 }
 #peoples{
-    max-width: 563px;
-    max-height: 545px;
-    object-fit: cover;
+    width: 563px;
+    height: 545px;
+    object-fit:cover;
 }
 .fourth_section_content{
+    max-width: 40%;
     text-align: left;
-    padding: 50px 50px 50px 50px;
 }
 .fourth_section_img{
     position: relative;
+  
 }
 .fourth_section_img_back{
     position: absolute;
-    max-width: 563px;
-    max-height: 545px;
+    width: 563px;
+    height: 545px;
     background: linear-gradient(198deg, rgba(239, 128, 49, 0.00) -227.37%, rgba(239, 128, 49, 0.15) 1.58%, rgba(239, 128, 49, 0.00) 103.02%);
-    top: 20px;
-    right: 20px;
+    top: 50px;
+    left: 50px;
 
 }
 .fifth_section{
     width: 100%;
-    margin-bottom: 100px;
-    margin-left: 140px;
-    margin-right: 140px;
-}
-
-
+    margin-bottom: 100px;}
   .fifth_section_headline{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    /* margin-left: 140px; */
-    margin-right: 140px;
-  }
-  .fifth_section_headline.title_section{
-    /* justify-content: left; */
+
   }
   .button_arrow{
     display: flex;
