@@ -63,7 +63,6 @@ main {
     align-items: baseline;
     width: 100%;
     margin-top: 20px;
-    /* margin-left: 140px; */
    }
    .logo{
     max-width: 50%;
@@ -74,7 +73,7 @@ main {
    }
    .menu{
     display: flex;
-    max-width: 50%;
+    width: 50%;
     font-size: var(--font-button);
     justify-content: space-between;
     align-items: baseline;  
