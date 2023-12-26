@@ -345,33 +345,28 @@ main {
 }
 
 .footer_lists{
-    width: 100%;
+    max-width: 100%;
     height: auto;
     background-color: var(--color-footer-bg);
     margin-bottom: 150px;
-    padding-bottom: 50px;
+    padding-bottom: 50px; 
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    padding-top: 100px;
+    padding-left: 140px;
 }
 .footer_headline{
     width: 100%;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    
 }
 .list_titles{
     font-size: var(--font-p);
     color: var(--color-text-black);
 }
 
-.footer_lists{
-    max-width: 100%;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: auto;
-    padding-top: 100px;
-    padding-left: 140px;
-
-}
 ul{
     list-style-type: none;
     text-align: left;
@@ -392,12 +387,14 @@ span{
     height: auto;
 }
 #mail_box{
-    max-width: 283px;
+    width: 283px;
     height: 113px;
     border: none;
 }
 ::placeholder{
-    margin-top: 0;
+    position: absolute;
+    top: 0;
+    margin-top: 20px;
 }
 .footer_send_message{
         display: flex;
