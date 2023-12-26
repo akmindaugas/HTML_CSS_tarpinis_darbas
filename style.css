@@ -4,12 +4,17 @@
 
 :root {
 --font-h1: 48px;
+--font-h1-mobile: 24px;
 --font-h2: 41px;
+--font-h2-mobile: 20px;
 --font-card-title: 24px;
+--font-card-title-mobile: 13px;
 --font-p: 20px;
+--font-p-mobile: 10px;
 --font-button: 16px;
+--font-button-mobile: 10px;
 --font-card-p: 13px;
-/* --font-card-title: 31px; */
+--font-card-p-mobile: 8px;
 --color-main-green: #647b64;
 --color-text-yellow: #f3b562;
 --color-footer-bg: #f0dcc5;
@@ -17,7 +22,6 @@
 --color-white-bg: #fff;
 --color-text-white: #fefefe;
 --color-text-black: #333;
-/* --color-icon-bg: #4f4f4f; */
 }
 
 *, *::before, *::after {
@@ -40,6 +44,7 @@ main {
     padding-left: 140px;
     padding-top: 50px;
      text-align: center;
+     overflow: hidden;
 }
    h4{
     font-size: var(--font-card-title);
@@ -66,10 +71,7 @@ main {
    }
    .logo{
     max-width: 50%;
-    /* display: flex; */
-    /* margin-left: 140px; */
     gap: 20px;
-    
    }
    .menu{
     display: flex;
@@ -81,6 +83,9 @@ main {
    .nav .menu a{
   text-decoration: none;
   color: var(--color-text-black);
+   }
+   .mobile_menu{
+    display: none;
    }
    .register{
     background-color: var(--color-main-green);
@@ -119,14 +124,13 @@ main {
     background-image: url(./img/Ellipse\ 118.svg);
     background-repeat: no-repeat;
     background-position:20% 25%;
- 
    }
    .get_started{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 350px;
-    height: 73px;
+    max-width: 350px;
+    max-height: 73px;
     background-color: #647b64;
     color: var(--color-text-white);
     border-radius: 2px;
@@ -165,8 +169,6 @@ main {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
-    /* column-gap: 20px; */
-    /* row-gap: 20px; */
     }
     .offers.card{
     max-width: 288px;
@@ -205,8 +207,8 @@ main {
     }
     .rectangle_second{
         position: absolute;
-       width: 363px;
-       height: 182px;
+       max-width: 363px;
+       max-height: 182px;
         border-radius: 8px;
         background: linear-gradient(198deg, rgba(239, 128, 49, 0.00) -227.37%, rgba(239, 128, 49, 0.15) 1.58%, rgba(239, 128, 49, 0.00) 103.02%);
         bottom: -30px;
@@ -215,8 +217,8 @@ main {
 }
     .rectangle_third{
         position: absolute;
-       width: 363px;
-       height: 182px;
+       max-width: 363px;
+       max-height: 182px;
         border-radius: 8px;
         background: url(./img/Dots\ 8px.1.png);
    bottom:-20px;
@@ -224,12 +226,12 @@ main {
       
 }
     .mot_icon{
-        width: 64px;
-        height: 64px;
+        max-width: 64px;
+        max-height: 64px;
     }
 .mot{
-    width: 360px;
-    height: 338px;
+    max-width: 360px;
+    max-height: 338px;
     text-align: left;
     border-radius: 8px;
     padding: 78px 50px 72px 50px;
@@ -253,8 +255,8 @@ main {
     justify-content:space-between;
 }
 #peoples{
-    width: 563px;
-    height: 545px;
+   max-width: 563px;
+    max-height: 545px;
     object-fit:cover;
 }
 .fourth_section_content{
@@ -263,12 +265,11 @@ main {
 }
 .fourth_section_img{
     position: relative;
-  
 }
 .fourth_section_img_back{
     position: absolute;
-    width: 563px;
-    height: 545px;
+    max-width: 563px;
+    max-height: 545px;
     background: linear-gradient(198deg, rgba(239, 128, 49, 0.00) -227.37%, rgba(239, 128, 49, 0.15) 1.58%, rgba(239, 128, 49, 0.00) 103.02%);
     top: 50px;
     left: 50px;
@@ -279,6 +280,7 @@ main {
     margin-bottom: 100px;
     margin-top: 150px;
 }
+
   .fifth_section_headline{
     display: flex;
     flex-direction: row;
@@ -311,7 +313,6 @@ main {
     flex-direction: row;
     gap: 50px;
     max-width: 100%;
-   
   }
 .c_card_img{
     max-width: 154px;
@@ -319,9 +320,7 @@ main {
     object-fit:cover;
 }
 .card_wrapper{
-    
      max-width: 360px;
-   
     display: grid;
     grid-template-columns: 1fr 3fr;
     grid-template-rows: auto;
@@ -409,3 +408,149 @@ span{
         gap: 10px;
        }
  
+@media screen and (max-width: 375px){
+
+    h1{
+        font-size: var(--font-h1-mobile);
+        font-weight: 400;
+       }
+    h4{
+        font-size: var(--font-card-title-mobile);
+        font-weight: 200;
+       }
+        h2{
+        font-size: var(--font-h2-mobile);
+        }
+        h5{
+            font-weight: 400;
+        }
+        h6{
+            font-weight: 200;
+        }
+        p{
+            font-size: var(--font-card-p-mobile);
+        }
+    main {
+        padding-right: 32px;
+        padding-left: 32px;
+      
+    }
+    .mobile_menu{
+        display: inline-flex;
+        flex-direction: row;
+    }
+    .menu{
+        display: none;
+    }
+    .logo{
+scale: 0.7;
+max-width: 40%;
+gap: 0px;    
+       }
+       .first_section_content{
+        max-width: 70%;
+        padding-right: 10px;
+       }
+       .tennis_girl{
+        max-width: 166px;
+       }
+       .second_section{
+        margin-top: 50px;
+        flex-direction: column;
+       }
+       .second_section_content{
+        max-width: 100%;
+        padding-left: 10px;
+       }
+       .rectangle{
+        width: 400px;
+        height: 68px;
+    }
+    .offers{
+margin-top: 60px;
+        }
+    .card{
+        padding: 20px;
+    }
+    .mot_icon{
+        max-width: 27px;
+        max-height: 27px;
+    }
+    .mot{
+        max-width: 157px;
+        max-height: 147px;
+        padding: 40px 30px 20px 20px;
+        margin: 10px;
+        }
+        .mot_cards{
+            justify-content: left;
+        }
+        .rectangle_second{
+           max-width: 157px;
+           max-height: 147px;
+            bottom: -30px;
+            right: 0;
+          
+    }
+        .rectangle_third{
+            max-width: 157px;
+            max-height: 147px;
+       bottom:-20px;
+       left: 0px;
+          
+    }
+    .fourth_section{
+        margin-top: 80px;
+        justify-content:flex-end;
+    }
+    #peoples{
+        max-width: 286px;
+         max-height: 277px;
+     }
+     .fourth_section_img_back{
+        max-width: 286px;
+         max-height: 277px;
+        top: 50px;
+        left: 50px;
+    }
+     .fourth_section_content{
+        max-width: 70%;
+        margin-left: 40px;
+        text-align: left;
+    }
+    .button_arrow{
+        display: none;
+      }
+      .caroussel_cards{
+        gap: 20px;
+      }
+      .c_card_img{
+        max-width: 103px;
+        max-height: 173px;
+    }
+    .card_wrapper{
+    max-width: 233px;
+    padding-left: 20px;
+   }
+   .card_headline{
+    text-align: left;
+    position:absolute;
+    left:100px;
+}
+.footer_lists{
+    margin-bottom: 10px;
+    padding-bottom: 50px; 
+    display: grid;
+    grid-template-columns: 1fr 1fr ;
+    grid-template-rows: auto;
+    padding-top: 100px;
+    padding-left: 0;
+}
+
+
+
+
+
+
+
+}
